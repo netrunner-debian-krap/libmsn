@@ -1,0 +1,5 @@
+libmsn (4.0~beta1-1) unstable; urgency=low
+
+  * Initial release (Closes: #505795)
+
+ -- Pau Garcia i Quiles <pgquiles@elpauer.org>  Sat, 15 Nov 2008 16:29:28 +0100
