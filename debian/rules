@@ -18,7 +18,7 @@ builddir/CMakeCache.txt:
 				-DCMAKE_EXE_LINKER_FLAGS="-Wl,--no-undefined -Wl,--as-needed" \
 				-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo \
 				-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON \
-				-DCMAKE_SKIP_RPATH:BOOL=true				
+				-DCMAKE_SKIP_RPATH:BOOL=ON
 
 build: build-stamp
 
@@ -66,7 +66,7 @@ binary-arch: build install
 	dh_strip --dbg-package=libmsn0.1-dbg
 	dh_compress
 	dh_fixperms
-	dh_makeshlibs -plibmsn0.1 -V'libmsn0.1 (>=4.0~beta2)'
+	dh_makeshlibs -plibmsn0.1 -V'libmsn0.1 (>=4.0~beta3)'
 	dh_shlibdeps -a
 	dh_installdeb
 	dh_gencontrol
