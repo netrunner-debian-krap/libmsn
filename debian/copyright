@@ -67,7 +67,7 @@ for third party components:
   * The MD5 implementation libmsn uses (files md5.h and md5.cpp) is 
     (c) 1999 Aladdin Enterprises and is licensed under the zlib license
 
-  Copyright (C) 1999 Aladdin Enterprises.  All rights reserved.
+  Copyright (C) Copyright 1999 Aladdin Enterprises.  All rights reserved.
 
   This software is provided 'as-is', without any express or implied
   warranty.  In no event will the authors be held liable for any damages
@@ -131,6 +131,35 @@ for third party components:
   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+the cmake/ dir contains two files
+  Copyright (c) 2007, Christian Ehrlicher, <ch.ehrlicher@gmx.de>
+  Copyright (c) 2006, Alexander Neundorf, <neundorf@kde.org>
 
-The Debian packaging is (C) 2008, Pau Garcia i Quiles <pgquiles@elpauer.org> and
-is licensed under the GPL, see above.
+The files are originating from kdelibs, which contains the mentioned COPYING-CMAKE-SCRIPTS. 
+This is the file from kdelibs:
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+1. Redistributions of source code must retain the copyright
+   notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+3. The name of the author may not be used to endorse or promote products 
+   derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+The Debian packaging is (C) Copyright 2008, Pau Garcia i Quiles 
+<pgquiles@elpauer.org> and is licensed under the GPL, see above.

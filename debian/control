@@ -29,7 +29,7 @@ Description: high-level C++ library for MSN Messenger [debug]
 Package: libmsn-dev
 Section: libdevel
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libmsn0.1 (= ${binary:Version})
+Depends: ${shlibs:Depends}, ${misc:Depends}, libmsn0.1 (= ${binary:Version}), libssl-dev
 Description: high-level C++ library for MSN Messenger [devel]
  The libmsn library is a C++ library for Microsoft's MSN Messenger
  service. It provides a high-level interface that allows an application 
