@@ -9,6 +9,8 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
+include /usr/share/quilt/quilt.make
+
 builddir/CMakeCache.txt:
 	dh_testdir
 	mkdir -p builddir
@@ -22,7 +24,7 @@ builddir/CMakeCache.txt:
 
 build: build-stamp
 
-build-stamp: builddir/CMakeCache.txt
+build-stamp: patch builddir/CMakeCache.txt
 	dh_testdir
 
 	# Add here commands to compile the package.
@@ -30,7 +32,7 @@ build-stamp: builddir/CMakeCache.txt
 
 	touch $@
 
-clean:
+clean: unpatch
 	dh_testdir
 	dh_testroot
 	rm -f build-stamp
@@ -66,7 +68,7 @@ binary-arch: build install
 	dh_strip --dbg-package=libmsn0.1-dbg
 	dh_compress
 	dh_fixperms
-	dh_makeshlibs -plibmsn0.1 -V'libmsn0.1 (>=4.0~beta4)'
+	dh_makeshlibs -plibmsn0.1 -V'libmsn0.1 (>=4.0~beta5)'
 	dh_shlibdeps -a
 	dh_installdeb
 	dh_gencontrol
