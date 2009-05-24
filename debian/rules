@@ -11,7 +11,7 @@
 
 include /usr/share/quilt/quilt.make
 
-builddir/CMakeCache.txt:
+builddir/Makefile: $(QUILT_STAMPFN)
 	dh_testdir
 	mkdir -p builddir
 	cd builddir && cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_C_FLAGS="$(CFLAGS)" -DCMAKE_CXX_FLAGS="$(CFLAGS)" \
@@ -24,7 +24,7 @@ builddir/CMakeCache.txt:
 
 build: build-stamp
 
-build-stamp: patch builddir/CMakeCache.txt
+build-stamp: builddir/Makefile
 	dh_testdir
 
 	# Add here commands to compile the package.
