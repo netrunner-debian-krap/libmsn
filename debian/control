@@ -1,12 +1,12 @@
 Source: libmsn
 Priority: optional
 Maintainer: Pau Garcia i Quiles <pgquiles@elpauer.org>
-Build-Depends: debhelper (>= 6.0.7), cmake, libssl-dev, quilt
-Standards-Version: 3.8.1
+Build-Depends: debhelper (>= 6.0.7), cmake, libssl-dev
+Standards-Version: 3.8.3.0
 Section: libs
 Homepage: http://libmsn.sourceforge.net
 
-Package: libmsn0.1
+Package: libmsn0.2
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: high-level C++ library for MSN Messenger [runtime]
@@ -14,11 +14,11 @@ Description: high-level C++ library for MSN Messenger [runtime]
  service. It provides a high-level interface that allows an application 
  to access instant messaging features with ease.
 
-Package: libmsn0.1-dbg
+Package: libmsn0.2-dbg
 Architecture: any
 Priority: extra
 Section: debug
-Depends: libmsn0.1 (= ${binary:Version}) 
+Depends: libmsn0.2 (= ${binary:Version}) 
 Description: high-level C++ library for MSN Messenger [debug]
  The libmsn library is a C++ library for Microsoft's MSN Messenger
  service. It provides a high-level interface that allows an application 
@@ -30,7 +30,7 @@ Description: high-level C++ library for MSN Messenger [debug]
 Package: libmsn-dev
 Section: libdevel
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libmsn0.1 (= ${binary:Version}), libssl-dev
+Depends: ${shlibs:Depends}, ${misc:Depends}, libmsn0.2 (= ${binary:Version}), libssl-dev
 Description: high-level C++ library for MSN Messenger [devel]
  The libmsn library is a C++ library for Microsoft's MSN Messenger
  service. It provides a high-level interface that allows an application 

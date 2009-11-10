@@ -1,3 +1,27 @@
+libmsn (4.0-1) unstable; urgency=low
+
+  * New upstream release
+  * Bump standards to 3.8.3.0 (no changes required)
+  * Add libsiren license to copyright file
+  * Bump shlibs and enable LIBMSN_INBOX_URL (which breaks API and ABI)
+    because ABI was broken anyway due to a method (getInboxUrl()) and data 
+    member (login_time, MSPAuth, sid, kv) additions to 
+    NotificationServerConnection. This happened in beta7, which I did not
+    package because I was too busy at the time :-(
+  * Binary packages are now libmsn0.2, libmsn0.2-dbg, etc
+
+ -- Pau Garcia i Quiles <pgquiles@elpauer.org>  Sun, 10 Nov 2009 20:02:27 +0100
+
+libmsn (4.0~beta6-1) unstable; urgency=low
+
+  * New upstream beta release
+  * Remove patch for buffer overflow, as it is now included upstream. 
+  * Remove build-dependency on quilt, as it is no longer needed because
+    there are no patches to be applied.
+  * Bump shlibs due to bugfix in MSNClientInformationFields enum
+
+ -- Pau Garcia i Quiles <pgquiles@elpauer.org>  Wed, 10 Jun 2009 11:58:32 +0200
+
 libmsn (4.0~beta5-1) unstable; urgency=low
 
   * New upstream beta release
