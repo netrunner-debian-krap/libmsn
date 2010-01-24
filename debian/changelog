@@ -1,3 +1,13 @@
+libmsn (4.1-1) unstable; urgency=low
+
+  * New upstream release
+  * Upstream bumped soname, therefore binary package is now libmsn0.3
+  * Add ${misc:Depends} to libmsn0.3-dbg
+  * Remove dh_installchangelogs because upstream removed changelog
+  * Install pkg-config file libmsn.pc, thus closing bug 564734
+
+ -- Pau Garcia i Quiles <pgquiles@elpauer.org>  Sun, 24 Jan 2010 14:16:58 +0100
+
 libmsn (4.0-2) unstable; urgency=low
 
   * Upload to unstable

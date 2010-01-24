@@ -58,15 +58,14 @@ binary-indep: build install
 binary-arch: build install
 	dh_testdir
 	dh_testroot
-	dh_installchangelogs ChangeLog
 	dh_installdocs
 	dh_install --sourcedir=debian/tmp/
 	dh_lintian
 	dh_link
-	dh_strip --dbg-package=libmsn0.2-dbg
+	dh_strip --dbg-package=libmsn0.3-dbg
 	dh_compress
 	dh_fixperms
-	dh_makeshlibs -plibmsn0.2 -V'libmsn0.2 (>=4.0)'
+	dh_makeshlibs -plibmsn0.3 -V'libmsn0.3 (>=4.1~)'
 	dh_shlibdeps -a
 	dh_installdeb
 	dh_gencontrol
