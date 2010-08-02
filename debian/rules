@@ -59,6 +59,7 @@ binary-arch: build install
 	dh_testdir
 	dh_testroot
 	dh_installdocs
+	dh_installchangelogs
 	dh_install --sourcedir=debian/tmp/
 	dh_lintian
 	dh_link
