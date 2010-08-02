@@ -1,4 +1,4 @@
-libmsn (4.1-1) unstable; urgency=low
+libmsn (4.1-1) experimental; urgency=low
 
   * New upstream release
   * Upstream bumped soname, therefore binary package is now libmsn0.3
