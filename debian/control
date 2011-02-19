@@ -1,8 +1,8 @@
 Source: libmsn
 Priority: optional
 Maintainer: Pau Garcia i Quiles <pgquiles@elpauer.org>
-Build-Depends: debhelper (>= 6.0.7), cmake, libssl-dev
-Standards-Version: 3.8.3.0
+Build-Depends: debhelper (>= 6.0.7), cmake, libssl-dev, hardening-wrapper
+Standards-Version: 3.9.1.0
 Section: libs
 Homepage: http://libmsn.sourceforge.net
 

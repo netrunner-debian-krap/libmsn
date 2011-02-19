@@ -1,3 +1,16 @@
+libmsn (4.1-2) unstable; urgency=low
+
+  [Martijn van Brummelen]
+  * Add hardening flags thanks to Raphael Geissert (Closes: #568830).
+
+  [Pau Garcia i Quiles]
+  * Explicitly state we use source format 1.0
+  * Update to standards 3.9.1.0
+  * Add lintian override for shlibs-calls-exit (it's in an 3rd-party file,
+    and according to upstream it's a never-used code path)
+
+ -- Pau Garcia i Quiles <pgquiles@elpauer.org>  Sat, 19 Feb 2011 13:32:10 +0100
+
 libmsn (4.1-1.2) unstable; urgency=low
 
   * Non-maintainer upload.
